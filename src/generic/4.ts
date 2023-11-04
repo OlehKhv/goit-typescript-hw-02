@@ -6,8 +6,8 @@ interface Article {
     title: string;
 }
 
-class Component<Article> {
-    constructor(public props: Article) {}
+class Component<T> {
+    constructor(public props: T) {}
 }
 
 class Page extends Component<Article> {
